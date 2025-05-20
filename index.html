@@ -29,6 +29,7 @@
   <style>
     .progress-container {
       margin-bottom: 20px;
+      font-weight: bold;
     }
 
     .progress-bar {
@@ -45,20 +46,26 @@
       text-align: center;
       line-height: 30px;
       position: relative;
+      color: white;
+    }
+
+    .progress-py {
+      background-color: #092e20;
+      width: 76%;
     }
 
     .progress-html {
-      background-color: #4caf50;
+      background-color: #e44d26;
       width: 86%;
     }
 
     .progress-css {
-      background-color: #2196F3;
+      background-color: #264de4;
       width: 70%;
     }
 
     .progress-js {
-      background-color: #ffeb3b;
+      background-color: #f7df1e;
       width: 70%;
       color: black;
     }
@@ -79,14 +86,7 @@
       text-align: center;
       line-height: 30px;
       color: black;
-      /* Change the color to ensure it's visible */
       font-weight: bold;
-      /* Optional: make text bold for better visibility */
-    }
-
-    .progress-text .skill-name {
-      color: rgb(2, 2, 2);
-      /* Color for skill names */
     }
   </style>
 
@@ -126,6 +126,8 @@
       });
     });
   </script>
+  
+  
   <!-- Add your content of header -->
   <div class="background-color-layer" style="background-image: url('assets/images/img-1.jpg.jpeg')"></div>
   <main class="content-wrapper">
@@ -134,14 +136,14 @@
         <h1>I'M Jissamol Benny</h1>
         <h3> A passionate and driven MCA student at Marian College Kuttikkanam </h3>
         <p>
-          <a class="fa-icon fa-icon-2x" href="https://email.com/" title="">
+          <a class="fa-icon fa-icon-2x" href="jissamolbenny@gmail.com" title="">
             <i class="fa fa-envelope"></i>
           </a>
-          <a class="fa-icon fa-icon-2x" href="https://twitter.com/" title="">
+          <a class="fa-icon fa-icon-2x" href="https://github.com/Jissamol" title="">
             <i class="fa fa-github"></i>
           </a>
 
-          <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/" title="">
+          <a class="fa-icon fa-icon-2x" href="www.linkedin.com/in/jissamolbenny" title="">
             <i class="fa fa-linkedin"></i>
           </a>
 
@@ -200,38 +202,62 @@
           <div class="card" id="projects">
             <div class="card-block">
               <h2>Projects</h2>
+
               <div class="row">
                 <div class="col-md-4">
-                  <img src="./assets/images/Booksite.jpg" class="img-responsive" alt="">
-                  <h3 class="h5">BookStore</h3>
-                  <p>Developed an online bookstore using Angular for the frontend and Node.js for the backend.</p>
-                  <a href="https://github.com/Jissamol/Angular.git" class="button-link">
-                    <button>Show More</button>
+                  <img src="./assets/images/image1.jpeg" class="img-responsive" alt="">
+                  <h3 class="h5">BagNest</h3>
+                  <p>Developed a full-stack web application for booking bags online, utilizing React for a dynamic and
+                    responsive frontend and Django for a robust backend.</p>
+                  <a href="https://github.com/Jissamol/bagnest-frontend.git" class="button-link">
+                    <button>Frontend</button>
+                  </a>
+                  <a href="https://github.com/Jissamol/bagnest-backend.git" class="button-link">
+                    <button>Backend</button>
                   </a>
 
                 </div>
-                <div class="col-md-4">
-                  <img src="./assets/images/handmade product.jpeg" class="img-responsive" alt="">
-                  <h3 class="h5">CraftZone</h3>
-                  <p>I developed an online platform for selling handmade products using PHP.</p>
-                  <a href="https://github.com/Jissamol/PHP-Project-CraftZone.git" class="button-link">
-                    <button>Show More</button>
-                  </a>
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="./assets/images/Booksite.jpg" class="img-responsive" alt="">
+                    <h3 class="h5">BookStore</h3>
+                    <p>Developed an online bookstore using Angular for the frontend and Node.js for the backend.</p>
+                    <a href="https://github.com/Jissamol/Angular.git" class="button-link">
+                      <button>Show More</button>
+                    </a>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img src="./assets/images/handmade product.jpeg" class="img-responsive" alt="">
+                      <h3 class="h5">CraftZone</h3>
+                      <p>I developed an online platform for selling handmade products using PHP.</p>
+                      <a href="https://github.com/Jissamol/PHP-Project-CraftZone.git" class="button-link">
+                        <button>Show More</button>
+                      </a>
+                    </div>
+                  </div>
+
+
                 </div>
-
-
               </div>
             </div>
-          </div>
 
 
-          <div class="card" id="skills">
+            <!-- <div class="card" id="skills">
             <div class="card-block">
 
               <h2>Skills Progress</h2>
 
               <div class="row">
                 <div class="col-md-4">
+                  <div class="progress-container">Django (76%)
+                    <div class="progress-bar" id="progress-bar-py">
+
+                      <div class="progress progress-py"></div>
+                      <div class="progress-text"><span class="skill-name"></span> </div>
+                    </div>
+                  </div>
                   <div class="progress-container">HTML (86%)
                     <div class="progress-bar" id="progress-bar-html">
 
@@ -270,80 +296,211 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="card" id="certificates">
-            <div class="card-block">
-              <h2>Certificates</h2>
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <img src="./assets/images/c intermediate.jpg" class="img-responsive" alt="...">
-                    <div class="carousel-caption">
-                      <h3 class="h5">C intermediate</h3>
+          </div> -->
+          <script>
+            function animateProgressBars() {
+              document.querySelectorAll('.progress').forEach(function (bar) {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                  bar.style.transition = 'width 1.5s ease-in-out';
+                  bar.style.width = width;
+                }, 100);
+              });
+            }
+          
+            window.addEventListener('load', animateProgressBars);
+          </script>
+            <div class="card" id="skills">
+              <div class="card-block">
+                <h2>Skills Progress</h2>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="progress-container">
+                      <span>Django (76%)</span>
+                      <div class="progress-bar">
+                        <div class="progress progress-py"></div>
+                        <div class="progress-text">Django - 76%</div>
+                      </div>
+                    </div>
+                    <div class="progress-container">
+                      <span>React.js (75%)</span>
+                      <div class="progress-bar">
+                        <div class="progress progress-js"></div>
+                        <div class="progress-text">React.js - 75%</div>
+                      </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                      <span>HTML (86%)</span>
+                      <div class="progress-bar">
+                        <div class="progress progress-html"></div>
+                        <div class="progress-text">HTML - 86%</div>
+                      </div>
+                    </div>
+                    <div class="progress-container">
+                      <span>CSS (70%)</span>
+                      <div class="progress-bar">
+                        <div class="progress progress-css"></div>
+                        <div class="progress-text">CSS - 70%</div>
+                      </div>
                     </div>
                   </div>
-                  <div class="item">
-                    <img src="./assets/images/sololearn c.jpg" class="img-responsive" alt="...">
-                    <div class="carousel-caption">
-                      <h3 class="h5">C introduction</h3>
+                  <div class="col-md-6">
+                    <div class="progress-container">
+                      <span>Angular (75%)</span>
+                      <div class="progress-bar">
+                        <div class="progress progress-angular"></div>
+                        <div class="progress-text">Angular - 75%</div>
+                      </div>
                     </div>
-                  </div>
-
-                  <div class="item">
-                    <img src="./assets/images/python.jpeg" class="img-responsive" alt="...">
-                    <div class="carousel-caption">
-                      <h3 class="h5">Python</h3>
+                    <div class="progress-container">
+                      <span>JavaScript (70%)</span>
+                      <div class="progress-bar">
+                        <div class="progress progress-js"></div>
+                        <div class="progress-text">JavaScript - 70%</div>
+                      </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                      <span>Node.js (70%)</span>
+                      <div class="progress-bar">
+                        <div class="progress progress-node"></div>
+                        <div class="progress-text">Node.js - 70%</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
-
               </div>
             </div>
-          </div>
 
-
-
-          <div class="card" id="contact">
-            <div class="card-block">
-              <h2>Contact</h2>
-              <form action="https://api.web3forms.com/submit" method="POST" class="reveal-content">
-                <div class="form-group">
-                  <input type="hidden" name="access_key" value="6371f169-fdbd-4323-937f-dc3d68c38a82">
+            <style>
+              #certificates {
+                margin: 50px auto;
+                max-width: 1000px;
+              }
+            
+              .card {
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                padding: 30px;
+              }
+            
+              .card h2 {
+                text-align: center;
+                margin-bottom: 30px;
+                font-weight: bold;
+                font-size: 28px;
+                color: #333;
+              }
+            
+              .scroll-container {
+                display: flex;
+                overflow-x: auto;
+                gap: 20px;
+                scroll-snap-type: x mandatory;
+                padding-bottom: 10px;
+              }
+            
+              .scroll-container::-webkit-scrollbar {
+                height: 10px;
+              }
+            
+              .scroll-container::-webkit-scrollbar-thumb {
+                background: #888;
+                border-radius: 6px;
+              }
+            
+              .scroll-container::-webkit-scrollbar-track {
+                background: #f1f1f1;
+              }
+            
+              .certificate {
+                min-width: 300px;
+                flex-shrink: 0;
+                scroll-snap-align: start;
+                border-radius: 10px;
+                overflow: hidden;
+                background: #fafafa;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+                text-align: center;
+              }
+            
+              .certificate img {
+                width: 100%;
+                height: 200px;
+                object-fit: contain;
+                background-color: #fff;
+              }
+            
+              .certificate h3 {
+                padding: 15px;
+                font-size: 18px;
+                color: #444;
+                margin: 0;
+              }
+            </style>
+            
+            <div class="card" id="certificates">
+              <div class="card-block">
+                <h2>Certificates</h2>
+                <div class="scroll-container">
+                  <!-- <div class="certificate">
+                    <img src="./assets/images/Jissamol-Benny.jpg" alt="Internship">
+                    <h3>Internship</h3>
+                  </div> -->
+                  <div class="certificate">
+                    <img src="./assets/images/c intermediate.jpg" alt="C Intermediate">
+                    <h3>C Intermediate</h3>
+                  </div>
+                  <div class="certificate">
+                    <img src="./assets/images/sololearn c.jpg" alt="C Introduction">
+                    <h3>C Introduction</h3>
+                  </div>
+                  <div class="certificate">
+                    <img src="./assets/images/python.jpeg" alt="Python">
+                    <h3>Python</h3>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="name">
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-                </div>
-
-                <div class="form-group">
-                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="5" id="message" name="message" placeholder="Enter your message"></textarea>
-                </div>
-                <div class="form-group">
-                  <button type="submit" class=" btn btn-primary">Send message</button>
-                </div>
-              </form>
+              </div>
             </div>
-          </div>
+            
+            
 
+
+
+            <div class="card" id="contact">
+              <div class="card-block">
+                <h2>Contact</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" class="reveal-content">
+                  <div class="form-group">
+                    <input type="hidden" name="access_key" value="6371f169-fdbd-4323-937f-dc3d68c38a82">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="name">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                  </div>
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="5" id="message" name="message"
+                      placeholder="Enter your message"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class=" btn btn-primary">Send message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-    </div>
 
   </main>
 
@@ -356,6 +513,9 @@
 
   <script type="text/javascript" src="./main.bc58148c.js"></script>
   <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
